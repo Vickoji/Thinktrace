@@ -1,0 +1,56 @@
+.page {
+  color: var(--ink, #22283c);
+  padding-block: clamp(2rem, 4vw, 5rem);
+}
+.page h1 {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  line-height: 1.1;
+  font-weight: normal;
+}
+.intro, .card p {
+  max-width: 54ch;
+  color: var(--muted, #5b6071);
+  line-height: 1.65;
+}
+.intro { margin-top: .75rem; overflow-wrap: anywhere; }
+.card {
+  max-width: 37rem;
+  margin-block: 2rem 1.25rem;
+  padding: clamp(1.25rem, 3.5vw, 2.4rem);
+  border: 1px solid #d9d9e2;
+  border-radius: .75rem;
+  background: #fff;
+}
+.card h2 { font-weight: 600; font-size: 1.25rem; margin-bottom: .45rem; }
+.form { display: grid; gap: .55rem; margin-top: 1.25rem; }
+.form label { font-size: .88rem; font-weight: 600; }
+.form input {
+  min-width: 0;
+  padding: .7rem .85rem;
+  font: inherit;
+  border: 1px solid #aba8b8;
+  border-radius: .4rem;
+  color: inherit;
+  background: #fff;
+}
+.form input[readonly] { border-color: #dedbe4; background: #f7f6f9; }
+.primary, .secondary {
+  appearance: none;
+  width: fit-content;
+  margin-top: .5rem;
+  min-height: 2.75rem;
+  padding: .6rem 1.2rem;
+  border-radius: .4rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.primary { background: #302d55; color: #fff; }
+.primary:disabled { opacity: .65; cursor: wait; }
+.secondary { border: 1px solid #aba8b8; color: inherit; }
+.link { display: inline-block; color: #514b84; font-weight: 600; text-underline-offset: .22rem; }
+.card .link { margin-top: .8rem; }
+.link:hover { text-decoration: underline; }
+.hint { font-size: .9rem; }
+.card p.error { color: #8a2842; }

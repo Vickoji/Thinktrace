@@ -1,0 +1,14 @@
+node_modules/
+.next/
+.env*
+!.env.example
+*.tsbuildinfo
+test-results/
+playwright-report/
+supabase/.temp/
+supabase/.branches/
+__pycache__/
+.ipynb_checkpoints/
+
+.venv/
+next-env.d.ts
